@@ -1,12 +1,23 @@
+// collecting donation for noakhali 
 
 
-// collectingTotalDonation('donate-input', 'btn-donate-for-noakhali', 'donation-total', 'main-balance' ) ;
+collectingTotalDonation('donate-input', 'btn-donate-for-noakhali', 'donation-total', 'main-balance');
+
+
+//collecting the donation for aid
+
+
+collectingTotalDonation('aid-donate-input', 'btn-donate-for-aid', 'aid-donation-total', 'main-balance');
+
+// collecting donation for feni 
+
+
+
+collectingTotalDonation('donate-input-feni', 'btn-donate-for-feni', 'donation-total-feni', 'main-balance');
 
 
 
 
-
-// blog page accordion code start here 
 
 
 const buttonDown = document.getElementsByClassName('btn-down');
@@ -111,6 +122,7 @@ if(window.location.pathname.includes('history.html')){
 else{
 
      historyButton.classList.remove('bg-lime-300');
+     
 
 }
 

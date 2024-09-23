@@ -1,7 +1,3 @@
-
-
-
-
 function collectingTotalDonation(inputId, submitId, totalId, balanceId){
     const submit = document.getElementById(submitId);
     const inputValue = document.getElementById(inputId);
@@ -9,7 +5,23 @@ function collectingTotalDonation(inputId, submitId, totalId, balanceId){
     const myBalance = document.getElementById(balanceId);
     
 
-    let mainBalance = Number(myBalance);
+
+
+
+    
+if(!submit || !inputValue || !totalDonation || !myBalance ){
+  return ;
+}
+
+
+
+
+
+
+
+    let mainBalance = (myBalance).innerText;
+
+
     let donation = 0 ;
 
 
@@ -37,6 +49,24 @@ function collectingTotalDonation(inputId, submitId, totalId, balanceId){
             inputValue.value = '';
            }
            
+           const historyItem = document.createElement('div');
+
+           const donateAmount = document.createElement('h1');
+           donateAmount.innerText = `Donated: ${inputAmount} BDT`;
+           historyItem.appendChild(donateAmount);
+
+           const totalAmount = document.createElement('p');
+           totalAmount.innerText = `Donated: ${donation} BDT`;
+           historyItem.append(totalAmount);
+
+
+           const donationTime = document.createElement('p');
+           donationTime.innerText = `Time: ${new Date().toLocaleDateString()}`;
+           historyItem.appendChild(donationTime);
+
+
+
+
            
         
 
