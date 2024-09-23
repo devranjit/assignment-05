@@ -1,3 +1,7 @@
+
+
+
+
 function collectingTotalDonation(inputId, submitId, totalId, balanceId){
     const submit = document.getElementById(submitId);
     const inputValue = document.getElementById(inputId);
@@ -5,7 +9,7 @@ function collectingTotalDonation(inputId, submitId, totalId, balanceId){
     const myBalance = document.getElementById(balanceId);
     
 
-    let mainBalance = Number(myBalance.innerText);
+    let mainBalance = Number(myBalance);
     let donation = 0 ;
 
 
@@ -21,9 +25,7 @@ function collectingTotalDonation(inputId, submitId, totalId, balanceId){
            if(inputAmount > mainBalance){
             alert('please recharge your account ');
            }
-           
-           
-           
+           else{
             donation += inputAmount ;
         
            totalDonation.innerText = `${donation} BDT`;
@@ -33,6 +35,11 @@ function collectingTotalDonation(inputId, submitId, totalId, balanceId){
             myBalance.innerText = `${mainBalance} BDT`;
 
             inputValue.value = '';
+           }
+           
+           
+        
+
         }
 
         else{
