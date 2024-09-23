@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                lexend: ['Lexend']
+              }
+            }
+          }
+        }
+      </script>
+
+</head>
+<body>
+    
+
+<header class=" bg-[#f9f7f3] sticky ">
+
+<div class="container px-20 py-10 grid grid-cols-2  sm:flex sm:justify-between md:flex md:justify-between lg:flex lg:justify-between items-center mx-auto">
+    
+    <div class="blog-button">
+        <button class="bg-lime-400 px-5 py-2 rounded-md"> <a class="font-lexend" href="#">Blog</a></button>
+    </div>
+    <div class="main-logo flex justify-between items-center gap-5 ">
+        <img src="/assets/logo.png" alt="">
+        <h1 class="font-lexend  font-2xl font-bold  ">Donate Bangladesh</h1>
+    </div>
+    <div class="my-account flex items-center gap-2 ">
+        <img class="w-5 h-5  " src="/assets/coin.png" alt="">
+        <h3 id="main-balance" class="font-lexend text-lg  text-gray-500 font-semibold"> 5000 </h3>
+    </div>
+</div>
+
+</header>
+
+
+
+
+<main>
+
+<div class="second-menu mx-auto bg-[#F3F3F3] ">
+    <div class="nav mx-auto text-center py-20 ">
+        <button class="bg-lime-300 px-5 py-2 rounded-lg font-lexend font-semibold mx-2">Donation</button>
+        <button class="border-2 px-5 py-2 rounded-lg font-lexend font-semibold mx-2">History</button>
+        
+    </div>
+</div>
+
+
+
+
+<!-- second navigation menu ends here  -->
+
+
+
+
+<!-- donation form start from here  -->
+
+
+
+<div class="bg-[#F3F3F3]">
+    <div class="container donate-form inline sm:grid sm:grid-cols-2 md:grid md:grid-cols-2 lg:grid grid-cols-2 gap-10 p-10 rounded-2xl bg-white mx-auto">
+        <div>
+            <img class=" w-full h-auto" src="/assets/noakhali.png" alt="">
+        </div>
+        <div>
+
+            <!-- total donate amount button   -->
+            <button class="flex justify-normal items-center gap-2 bg-gray-200 p-2 rounded-lg font-lexend text-gray-600">
+                <img class="w-5 h-auto" src="/assets/coin.png" alt="">
+            <h1 id="donation-total" class="donation-total"> 0 </h1>
+        </button>
+
+
+        <!-- total donate amount button section end   -->
+    
+            <div>
+                <h1 class=" font-lexend font-bold text-xl py-3">Donate for Flood at Noakhali, Bangladesh</h1>
+                <p class="font-lexend font-light text-md py-2">
+                    The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+                </p>
+    
+                <div>
+                    <input id="donate-input" class="border-2 w-full p-3 rounded-lg" type="text" placeholder="Write Donation Amount ">
+                    <button  id="btn-donate-for-noakhali" class="font-lexend font-bold bg-lime-300 w-full py-3 rounded-lg my-4">Donate Now </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    
+</main>
+
+
+
+
+
+
+<footer class=" bg-[#f9f7f3] h-20 w-full">
+     
+
+    
+</footer>
+
+
+
+
+
+
+
+
+
+   
+<script src="common-function.js"></script>
+    <script src="function.js"></script>
+    
+</body>
+</html>
