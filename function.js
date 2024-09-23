@@ -83,3 +83,49 @@ homeButton.addEventListener('click', function(){
     blogButton.classList.remove('hidden');
 })
 
+
+
+
+
+// blog button codes ends here 
+
+
+
+
+
+// donation and history button toggle code start here 
+
+
+
+const donationButton = document.getElementById('btn-donation');
+const historyButton = document.getElementById('btn-history');
+
+
+if(window.location.pathname.includes('history.html')){
+    historyButton.classList.add('bg-lime-300');
+    donationButton.classList.remove('bg-lime-300');
+    donationButton.classList.add('border-2');
+    donationButton.classList.add('rounded-lg');
+}
+
+else{
+
+     historyButton.classList.remove('bg-lime-300');
+
+}
+
+
+
+
+
+
+historyButton.addEventListener('click', function(){
+
+    window.location.href = "history.html";
+    
+})
+
+donationButton.addEventListener('click', function(){
+    window.location.href = "index.html";
+
+})
