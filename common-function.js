@@ -88,7 +88,7 @@ function collectingTotalDonation(inputId, submitId, totalId, balanceId, formId){
 
 
 
-            // popup function
+          
 
 
 
@@ -106,7 +106,7 @@ function collectingTotalDonation(inputId, submitId, totalId, balanceId, formId){
            
            const donateAmount = document.createElement('h1');
            donateAmount.classList.add('text-lg', 'font-lexend', 'font-bold', 'py-2');
-            donateAmount.innerText = `${inputAmount} Taka is Donated for ${formName}`;
+            donateAmount.innerText = `${inputAmount} Taka Donated   ${formName}`;
             historySection.appendChild(donateAmount);
             
             const donationtime = document.createElement('p');
