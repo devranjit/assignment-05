@@ -78,21 +78,25 @@ function collectingTotalDonation(inputId, submitId, totalId, balanceId, formId){
    
  
             historyContainer.appendChild(historySection);
+
           }
 
+      
           
-
-
-          
-           
-           
-          
-          
-
+        
         }
 
         else{
-            alert('Please enter a valid amount ')
+            
+          const invalidPopup = document.getElementById('invalid-popup-section');
+
+          invalidPopup.classList.remove('hidden');
+
+          const invalidButton = document.getElementById('invalid-btn-close');
+
+          invalidButton.addEventListener('click', function(){
+            invalidPopup.classList.add('hidden');
+          })
         }
       })
 
