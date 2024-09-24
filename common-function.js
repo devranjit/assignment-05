@@ -37,6 +37,8 @@ function collectingTotalDonation(inputId, submitId, totalId, balanceId, formId){
 
             
            }
+
+
            else{
             donation += inputAmount ;
         
@@ -49,7 +51,27 @@ function collectingTotalDonation(inputId, submitId, totalId, balanceId, formId){
             inputValue.value = ''; 
 
 
+            // popup function 
 
+
+            
+            const successPopup = document.getElementById('success-popup-section');
+
+          successPopup.classList.remove('hidden');
+
+          const successButton = document.getElementById('success-btn-close');
+
+          successButton.addEventListener('click', function(){
+          
+            successPopup.classList.add('hidden');
+
+          })
+
+
+
+
+
+            // popup function
 
 
 
@@ -77,9 +99,13 @@ function collectingTotalDonation(inputId, submitId, totalId, balanceId, formId){
             historySection.appendChild(donationtime);
    
  
-            historyContainer.appendChild(historySection);
+            historyContainer.appendChild(historySection)
+            
+           
 
           }
+
+          
 
       
           
