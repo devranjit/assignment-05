@@ -1,19 +1,19 @@
 // collecting donation for noakhali 
 
 
-collectingTotalDonation('donate-input', 'btn-donate-for-noakhali', 'donation-total', 'main-balance');
+collectingTotalDonation('donate-input', 'btn-donate-for-noakhali', 'donation-total', 'main-balance', 'history-page');
 
 
 //collecting the donation for aid
 
 
-collectingTotalDonation('aid-donate-input', 'btn-donate-for-aid', 'aid-donation-total', 'main-balance');
+collectingTotalDonation('aid-donate-input', 'btn-donate-for-aid', 'aid-donation-total', 'main-balance','history-page');
 
 // collecting donation for feni 
 
 
 
-collectingTotalDonation('donate-input-feni', 'btn-donate-for-feni', 'donation-total-feni', 'main-balance');
+collectingTotalDonation('donate-input-feni', 'btn-donate-for-feni', 'donation-total-feni', 'main-balance', 'history-page');
 
 
 
@@ -106,38 +106,28 @@ homeButton.addEventListener('click', function(){
 
 // donation and history button toggle code start here 
 
+const donationContainer = document.getElementById('donation-container');
+const historyContainer = document.getElementById('history-container');
 
-
-const donationButton = document.getElementById('btn-donation');
 const historyButton = document.getElementById('btn-history');
 
+const donationButton = document.getElementById('btn-donation');
 
-if(window.location.pathname.includes('history.html')){
-    historyButton.classList.add('bg-lime-300');
-    donationButton.classList.remove('bg-lime-300');
-    donationButton.classList.add('border-2');
-    donationButton.classList.add('rounded-lg');
-}
 
-else{
-
-     historyButton.classList.remove('bg-lime-300');
+document.getElementById('btn-history').addEventListener('click', function(){
      
+       donationContainer.classList.add('hidden');
+       historyContainer.classList.remove('hidden');
+       historyButton.classList.add('bg-lime-300')
+       donationButton.classList.remove('bg-lime-300');
+       donationButton.classList.add('border-2');
 
-}
-
-
-
-
-
-
-historyButton.addEventListener('click', function(){
-
-    window.location.href = "history.html";
-    
 })
 
-donationButton.addEventListener('click', function(){
-    window.location.href = "index.html";
 
+document.getElementById('btn-donation').addEventListener('click', function(){
+    donationContainer.classList.remove('hidden');
+    donationButton.classList.add('bg-lime-300');
+    historyButton.classList.remove('bg-lime-300');
+    historyButton.classList.add.apply('border-2');
 })

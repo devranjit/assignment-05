@@ -3,24 +3,10 @@ function collectingTotalDonation(inputId, submitId, totalId, balanceId){
     const inputValue = document.getElementById(inputId);
     const totalDonation = document.getElementById(totalId);
     const myBalance = document.getElementById(balanceId);
-    
 
 
 
-
-    
-if(!submit || !inputValue || !totalDonation || !myBalance ){
-  return ;
-}
-
-
-
-
-
-
-
-    let mainBalance = (myBalance).innerText;
-
+   let mainBalance = parseFloat(myBalance.innerText.replace('BDT', ''));
 
     let donation = 0 ;
 
@@ -30,7 +16,6 @@ if(!submit || !inputValue || !totalDonation || !myBalance ){
 
         const inputAmount = Number(inputValue.value);
 
-        
         
         if(!isNaN(inputAmount) && inputAmount > 0){
             
@@ -46,29 +31,17 @@ if(!submit || !inputValue || !totalDonation || !myBalance ){
 
             myBalance.innerText = `${mainBalance} BDT`;
 
-            inputValue.value = '';
-           }
+            inputValue.value = ''; 
+          }
+
+           const historyContainer = document.getElementById('history-container');
+
+           const donateAmount = document.createElement('p');
+           donateAmount.innerText = `${inputAmount}`;
            
-           const historyItem = document.createElement('div');
-
-           const donateAmount = document.createElement('h1');
-           donateAmount.innerText = `Donated: ${inputAmount} BDT`;
-           historyItem.appendChild(donateAmount);
-
-           const totalAmount = document.createElement('p');
-           totalAmount.innerText = `Donated: ${donation} BDT`;
-           historyItem.append(totalAmount);
-
-
-           const donationTime = document.createElement('p');
-           donationTime.innerText = `Time: ${new Date().toLocaleDateString()}`;
-           historyItem.appendChild(donationTime);
-
-
-
-
-           
-        
+           historyContainer.appendChild(donateAmount);
+          
+          
 
         }
 
@@ -78,3 +51,8 @@ if(!submit || !inputValue || !totalDonation || !myBalance ){
       })
 
 }
+
+
+
+
+
