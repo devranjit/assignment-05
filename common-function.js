@@ -23,7 +23,16 @@ function collectingTotalDonation(inputId, submitId, totalId, balanceId, formId){
         if(!isNaN(inputAmount) && inputAmount > 0){
             
            if(inputAmount > mainBalance){
-            alert('please recharge your account ');
+            const popupSection = document.getElementById('popup-section');
+            popupSection.classList.remove('hidden');
+
+            const popupClose = document.getElementById('btn-close');
+
+            popupClose.addEventListener('click', function(){
+              popupSection.classList.add('hidden');
+            })
+
+            
            }
            else{
             donation += inputAmount ;
