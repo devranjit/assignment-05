@@ -1,73 +1,17 @@
 
-collectingTotalDonation('donate-input', 'btn-donate-for-noakhali', 'donation-total', 'main-balance');
+collectingTotalDonation('donate-input', 'btn-donate-for-noakhali', 'donation-total', 'main-balance', 'form-for-noakhali');
 
 
 //collecting the donation for aid
 
 
-collectingTotalDonation('aid-donate-input', 'btn-donate-for-aid', 'aid-donation-total', 'main-balance');
+collectingTotalDonation('aid-donate-input', 'btn-donate-for-aid', 'aid-donation-total', 'main-balance','form-for-feni');
 
 // collecting donation for feni 
 
 
 
-collectingTotalDonation('donate-input-feni', 'btn-donate-for-feni', 'donation-total-feni', 'main-balance');
-
-
-
-
-
-
-
-
-
-
-// blog page navigation start here 
-
-
-const blogButton = document.getElementById('btn-blog');
-const homeButton = document.getElementById('btn-home');
-
-
-
-if(window.location.pathname.includes('blog.html')){
-    blogButton.classList.add('hidden');
-    homeButton.classList.remove('hidden');
-
-}
-
-else{
-    homeButton.classList.add('hidden');
-    blogButton.classList.remove('hidden');
-}
-
-
-blogButton.addEventListener('click', function(){
-
-     window.location.href = 'blog.html';
-
-    blogButton.classList.add('hidden');
-    homeButton.classList.remove('hidden');
-})
-
-
-
-
-homeButton.addEventListener('click', function(){
-
-    window.location.href = 'index.html';
-
-    homeButton.classList.add('hidden');
-    blogButton.classList.remove('hidden');
-})
-
-
-
-
-
-// blog button codes ends here 
-
-
+collectingTotalDonation('donate-input-feni', 'btn-donate-for-feni', 'donation-total-feni', 'main-balance', 'form-for-aid');
 
 
 

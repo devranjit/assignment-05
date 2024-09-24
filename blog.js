@@ -29,6 +29,8 @@ for(let i = 0 ; i < buttonDown.length; i++){
 // blog page accordion ends  here 
 
 
+
+
 // blog page navigation start here 
 
 
