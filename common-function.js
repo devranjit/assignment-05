@@ -1,3 +1,6 @@
+
+ let mainBalance = 0 ;
+
 function collectingTotalDonation(inputId, submitId, totalId, balanceId){
     const submit = document.getElementById(submitId);
     const inputValue = document.getElementById(inputId);
@@ -6,10 +9,9 @@ function collectingTotalDonation(inputId, submitId, totalId, balanceId){
 
 
 
-   let mainBalance = parseFloat(myBalance.innerText.replace('BDT', ''));
+ mainBalance = parseFloat(myBalance.innerText.replace('BDT', ''));
 
-    let donation = 0 ;
-
+  let donation = 0 ;
 
       submit.addEventListener('click', function(event){
         event.preventDefault();

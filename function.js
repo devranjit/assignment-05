@@ -1,56 +1,23 @@
-// collecting donation for noakhali 
 
-
-collectingTotalDonation('donate-input', 'btn-donate-for-noakhali', 'donation-total', 'main-balance', 'history-page');
+collectingTotalDonation('donate-input', 'btn-donate-for-noakhali', 'donation-total', 'main-balance');
 
 
 //collecting the donation for aid
 
 
-collectingTotalDonation('aid-donate-input', 'btn-donate-for-aid', 'aid-donation-total', 'main-balance','history-page');
+collectingTotalDonation('aid-donate-input', 'btn-donate-for-aid', 'aid-donation-total', 'main-balance');
 
 // collecting donation for feni 
 
 
 
-collectingTotalDonation('donate-input-feni', 'btn-donate-for-feni', 'donation-total-feni', 'main-balance', 'history-page');
+collectingTotalDonation('donate-input-feni', 'btn-donate-for-feni', 'donation-total-feni', 'main-balance');
 
 
 
 
 
 
-const buttonDown = document.getElementsByClassName('btn-down');
-const buttonUp = document.getElementsByClassName('btn-up');
-const answer = document.getElementsByClassName('faq-answer');
-
-
-
-
-for(let i = 0 ; i < buttonDown.length; i++){
-
-    buttonDown[i].addEventListener('click', function(){
-
-        buttonDown[i].classList.add('hidden');
-        buttonUp[i].classList.remove('hidden');
-        answer[i].classList.remove('hidden');
-        
-            
-        })
-
-        buttonUp[i].addEventListener('click', function(){
-
-            answer[i].classList.add('hidden');
-            buttonUp[i].classList.add('hidden');
-            buttonDown[i].classList.remove('hidden');
-          })
-
-}
-
-
-
-
-// blog page accordion ends  here 
 
 
 
@@ -129,5 +96,5 @@ document.getElementById('btn-donation').addEventListener('click', function(){
     donationContainer.classList.remove('hidden');
     donationButton.classList.add('bg-lime-300');
     historyButton.classList.remove('bg-lime-300');
-    historyButton.classList.add.apply('border-2');
+    historyButton.classList.add('border-2');
 })
