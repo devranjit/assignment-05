@@ -117,9 +117,17 @@ function collectingTotalDonation(inputId, submitId, totalId, balanceId, formId){
           const invalidPopup = document.getElementById('invalid-popup-section');
 
           invalidPopup.classList.remove('hidden');
+          invalidPopup.classList.add('z-50');
+
+          // const mainSection = document.getElementById('main-body');
+          // mainSection.classList.add('blur-sm');
+          // mainSection.classList.add('z-0');
+
 
           const invalidButton = document.getElementById('invalid-btn-close');
 
+
+          
           invalidButton.addEventListener('click', function(){
             invalidPopup.classList.add('hidden');
           })
