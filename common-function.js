@@ -28,10 +28,17 @@ function collectingTotalDonation(inputId, submitId, totalId, balanceId, formId){
             const popupSection = document.getElementById('popup-section');
             popupSection.classList.remove('hidden');
 
+            const mainSection = document.getElementById('main-body');
+          mainSection.classList.add('blur-sm');
+          mainSection.classList.add('z-0');
+
+
+
             const popupClose = document.getElementById('btn-close');
 
             popupClose.addEventListener('click', function(){
               popupSection.classList.add('hidden');
+              mainSection.classList.remove('blur-sm');
               
             })
 
@@ -59,11 +66,21 @@ function collectingTotalDonation(inputId, submitId, totalId, balanceId, formId){
 
           successPopup.classList.remove('hidden');
 
+          const mainSection = document.getElementById('main-body');
+          mainSection.classList.add('blur-sm');
+          mainSection.classList.add('z-0');
+
+
+
+
+
+
           const successButton = document.getElementById('success-btn-close');
 
           successButton.addEventListener('click', function(){
           
             successPopup.classList.add('hidden');
+            mainSection.classList.remove('blur-sm');
 
           })
 
@@ -119,9 +136,9 @@ function collectingTotalDonation(inputId, submitId, totalId, balanceId, formId){
           invalidPopup.classList.remove('hidden');
           invalidPopup.classList.add('z-50');
 
-          // const mainSection = document.getElementById('main-body');
-          // mainSection.classList.add('blur-sm');
-          // mainSection.classList.add('z-0');
+          const mainSection = document.getElementById('main-body');
+          mainSection.classList.add('blur-sm');
+          mainSection.classList.add('z-0');
 
 
           const invalidButton = document.getElementById('invalid-btn-close');
@@ -130,6 +147,7 @@ function collectingTotalDonation(inputId, submitId, totalId, balanceId, formId){
           
           invalidButton.addEventListener('click', function(){
             invalidPopup.classList.add('hidden');
+            mainSection.classList.remove('blur-sm');
           })
         }
       })
