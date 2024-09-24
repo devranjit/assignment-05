@@ -25,7 +25,8 @@
 <body>
     
 
-<header class=" bg-[#f9f7f3] sticky top-0 z-10 ">
+<header class=" sticky top-0 z-10 " style="background-color: rgb(236, 229, 213)
+;">
 
 <div class="container py-5 grid grid-cols-2  sm:flex sm:justify-between md:flex md:justify-between lg:flex lg:justify-between items-center mx-auto">
     
@@ -63,10 +64,10 @@
 
 
 
-<main id="main-body">
+<main  id="main-body">
 
 
-<div>
+<div class="p-4 sm:p-0 md:p-0 lg:p-0 bg-[#F3F3F3] " >
 
 <div class="second-menu mx-auto bg-[#F3F3F3] sticky top-20 " style="background-color: rgba(243, 243, 243, 0.9);">
     <div class="nav mx-auto text-center py-10 ">
@@ -91,16 +92,16 @@
 <div id="donation-container" class="donation">
 
 <div class="bg-[#F3F3F3] ">
-    <div class="   container  donate-form inline sm:grid sm:grid-cols-2 md:grid md:grid-cols-2 lg:grid grid-cols-2 gap-10 p-10 rounded-2xl bg-white mx-auto">
+    <div class="    container  donate-form inline p-10 sm:grid sm:grid-cols-2  md:grid md:grid-cols-2 lg:grid  lg:grid-cols-2  gap-10 4 rounded-2xl bg-white mx-auto">
         <div>
             <img class=" w-full h-auto" src="/assets/noakhali.png" alt="">
         </div>
         <div>
 
             <!-- total donate amount button   -->
-            <button class="flex justify-normal items-center gap-2 bg-gray-200 p-2 rounded-lg font-lexend text-gray-600">
+            <button class="flex justify-normal items-center gap-2 bg-gray-200 p-2 rounded-lg font-lexend text-gray-600 my-5 sm:my-0 md:my-0 lg:my-0 ">
                 <img class="w-5 h-auto" src="/assets/coin.png" alt="">
-            <h1 id="donation-total" class="donation-total"> 0 <span>BDT</span> </h1>
+            <h1 id="donation-total" class="donation-total "> 0 <span>BDT</span> </h1>
         </button>
 
 
@@ -132,14 +133,14 @@
 
     
 
-    <div class=" my-10 container  donate-form inline sm:grid sm:grid-cols-2 md:grid md:grid-cols-2 lg:grid -grid-cols-2 gap-10 p-10 rounded-2xl bg-white mx-auto">
+    <div class=" my-10 container  donate-form inline sm:grid sm:grid-cols-2 md:grid md:grid-cols-2 lg:grid -grid-cols-2 gap-10 p-10 rounded-2xl bg-white mx-auto ">
         <div>
             <img class=" w-full h-auto" src="/assets/feni.png" alt="">
         </div>
         <div>
 
             <!-- total donate amount button   -->
-            <button class="flex justify-normal items-center gap-2 bg-gray-200 p-2 rounded-lg font-lexend text-gray-600">
+            <button class="flex justify-normal items-center gap-2 bg-gray-200 p-2 rounded-lg font-lexend text-gray-600 my-5 sm:my-0 md:my-0 lg:my-0 ">
                 <img class="w-5 h-auto" src="/assets/coin.png" alt="">
             <h1 id="donation-total-feni" class="donation-total"> 0 <span>BDT</span> </h1>
         </button>
@@ -155,7 +156,7 @@
     
                 <div>
                     <div class="hidden"></div>
-                        <h1 id="form-for-feni">Donated for Flood Relief in Feni,Bangladesh</h1>
+                        <h1 class="hidden" id="form-for-feni">Donated for Flood Relief in Feni,Bangladesh</h1>
                     </div>
                     <input id="donate-input-feni" class="border-2 w-full p-3 rounded-lg" type="text" placeholder="Write Donation Amount ">
                     <button  id="btn-donate-for-feni" class="font-lexend font-bold bg-lime-300 w-full py-3 rounded-lg my-4">Donate Now </button>
@@ -166,15 +167,16 @@
 
 
     <!-- aid donation start from here -->
-   <div class=""></div>  
-     <div class=" my-10 container  donate-form inline sm:grid sm:grid-cols-2 md:grid md:grid-cols-2 lg:grid grid-cols-2 gap-10 p-10 rounded-2xl mx-auto bg-white">
+   <div> 
+    <div class="py-20">
+     <div class="container  donate-form inline  sm:grid sm:grid-cols-2 md:grid md:grid-cols-2 lg:grid grid-cols-2 gap-10 p-10 rounded-2xl mx-auto bg-white">
         <div>
             <img class=" w-full h-auto" src="/assets/quota-protest.png" alt="">
         </div>
         <div>
 
             <!-- total donate amount button   -->
-            <button class="flex justify-normal items-center gap-2 bg-gray-200 p-2 rounded-lg font-lexend text-gray-600">
+            <button class="flex justify-normal items-center gap-2 bg-gray-200 p-2 rounded-lg font-lexend text-gray-600 my-5 sm:my-0 md:my-0 lg:my-0 ">
                 <img class="w-5 h-auto" src="/assets/coin.png" alt="">
             <h1 id="aid-donation-total" class="donation-total"> 0 <span>BDT</span> </h1>
         </button>
@@ -184,14 +186,17 @@
     
             <div>
                 <h1 class=" font-lexend font-bold text-xl py-3">Aid for Injured in the Quota Movement</h1>
+
             <p class="font-lexend font-light text-md py-2">
                     The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
                 </p>
     
                 <div>
+                    
                     <div class="hidden"></div>
-                        <h1 id="form-for-aid">Donated for Aid for Injured in the Quota Movement, Bangladesh</h1>
+                        <h1 class="hidden" id="form-for-aid">Donated for Aid for Injured in the Quota Movement, Bangladesh</h1>
                     </div>
+
                     <input id="aid-donate-input" class="border-2 w-full p-3 rounded-lg" type="text" placeholder="Write Donation Amount ">
                     <button  id="btn-donate-for-aid" class="font-lexend font-bold bg-lime-300 w-full py-3 rounded-lg my-4">Donate Now </button>
                 </div>
@@ -217,7 +222,7 @@
 
 <!-- this money popup -->
 
-<div id="popup-section" class="  hidden  container bg-white w-96 h-72  shadow rounded-xl p-5 text-center  mx-auto fixed top-96 left-96 right-96 ">   
+<div id="popup-section" class="  hidden container bg-white w-96 h-72  shadow rounded-xl p-5 text-center mx-auto fixed top-52 left-0 right-0 sm:fixed md:fixed lg:fixed X sm:top-96 md:top-96 lg:top-96 sm:left-96 md:left-96 lg:left-96 sm:right-96 md:right-96 lg:right-96  ">   
 
     <div class="">
      <h1 class="text-3xl font-bold font-lexend py-3  " >Unsufficient funds</h1>
@@ -237,7 +242,7 @@
 
 <!-- sucessfull popuup starts  -->
       
-<div id="success-popup-section" class="  hidden  container bg-white w-96 h-72  shadow rounded-xl p-5 text-center  mx-auto fixed top-96 left-96 right-96 ">   
+<div id="success-popup-section" class="  hidden container bg-white w-96 h-72  shadow rounded-xl p-5 text-center mx-auto fixed top-52 left-0 right-0 sm:fixed md:fixed lg:fixed X sm:top-96 md:top-96 lg:top-96 sm:left-96 md:left-96 lg:left-96 sm:right-96 md:right-96 lg:right-96  ">   
 
     <div class="">
      <h1 class="text-3xl font-bold font-lexend py-3  " >Congrats!</h1>
@@ -252,7 +257,7 @@
 
 <!-- invalid format popup  -->
 
-<div id="invalid-popup-section" class="  hidden  container bg-white w-96 h-72  shadow rounded-xl p-5 text-center  mx-auto fixed top-96 left-96 right-96 ">   
+<div id="invalid-popup-section" class=" hidden container bg-white w-96 h-72  shadow rounded-xl p-5 text-center mx-auto fixed top-52 left-0 right-0 sm:fixed md:fixed lg:fixed X sm:top-96 md:top-96 lg:top-96 sm:left-96 md:left-96 lg:left-96 sm:right-96 md:right-96 lg:right-96  ">   
 
     <div class="">
      <h1 class="text-3xl font-bold font-lexend py-3  " >Invalid Format</h1>
@@ -269,7 +274,7 @@
 
 
 
-<footer class=" bg-[#f9f7f3] h-20 w-full">
+<footer class=" bg-[#f9f7f3] h-20 w-full ">
      
 
     
