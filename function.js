@@ -25,6 +25,17 @@ const historyButton = document.getElementById('btn-history');
 const donationButton = document.getElementById('btn-donation');
 
 
+document.getElementById('btn-donation').addEventListener('click', function(){
+    donationContainer.classList.remove('hidden');
+    donationButton.classList.add('bg-lime-300');
+    historyButton.classList.remove('bg-lime-300');
+    historyButton.classList.add('border-2');
+    historyContainer.classList.add('hidden');
+})
+
+
+
+
 document.getElementById('btn-history').addEventListener('click', function(){
      
        donationContainer.classList.add('hidden');
@@ -36,9 +47,3 @@ document.getElementById('btn-history').addEventListener('click', function(){
 })
 
 
-document.getElementById('btn-donation').addEventListener('click', function(){
-    donationContainer.classList.remove('hidden');
-    donationButton.classList.add('bg-lime-300');
-    historyButton.classList.remove('bg-lime-300');
-    historyButton.classList.add('border-2');
-})
